@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using Nubelity.Infrastructure.Persistence;
+
 namespace Nubelity.API
 {
     public class Program
@@ -13,6 +16,13 @@ namespace Nubelity.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            builder.Services.AddDbContext<LibraryDbContext>(options =>
+                options.UseNpgsql(connectionString)
+            );
+
 
             var app = builder.Build();
 
