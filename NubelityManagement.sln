@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nubelity.API", "Nubelity.API\Nubelity.API.csproj", "{D01A9887-9DE0-44CB-812F-591B65C255BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nubelity.Application", "Nubelity.Application\Nubelity.Application.csproj", "{B1CDF6F2-66D0-46DA-BF1F-ABEC3A803A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nubelity.Domain", "Nubelity.Domain\Nubelity.Domain.csproj", "{8514439E-FD94-43EF-ABC1-FAC3639A2A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nubelity.Infrastructure", "Nubelity.Infrastructure\Nubelity.Infrastructure.csproj", "{9D09074B-D29A-4DB6-83F2-B79C8E87B795}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CDF6F2-66D0-46DA-BF1F-ABEC3A803A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CDF6F2-66D0-46DA-BF1F-ABEC3A803A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CDF6F2-66D0-46DA-BF1F-ABEC3A803A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CDF6F2-66D0-46DA-BF1F-ABEC3A803A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8514439E-FD94-43EF-ABC1-FAC3639A2A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8514439E-FD94-43EF-ABC1-FAC3639A2A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8514439E-FD94-43EF-ABC1-FAC3639A2A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8514439E-FD94-43EF-ABC1-FAC3639A2A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D09074B-D29A-4DB6-83F2-B79C8E87B795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D09074B-D29A-4DB6-83F2-B79C8E87B795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D09074B-D29A-4DB6-83F2-B79C8E87B795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D09074B-D29A-4DB6-83F2-B79C8E87B795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
