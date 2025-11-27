@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nubelity.API", "Nubelity.API\Nubelity.API.csproj", "{D01A9887-9DE0-44CB-812F-591B65C255BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01A9887-9DE0-44CB-812F-591B65C255BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80C2ADD7-7630-4242-A91C-7CA609BB18A9}
+	EndGlobalSection
+EndGlobal

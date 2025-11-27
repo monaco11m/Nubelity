@@ -1,0 +1,105 @@
+# =======================================================
+# .NET / Visual Studio / EF Core / General GitIgnore
+# =======================================================
+
+# Build folders
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cachefile
+*.db
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio Code
+.vscode/
+.history/
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Entity Framework Migrations (optional — keep if you want to version them)
+# Uncomment if you don't want to push migrations
+# **/Migrations/
+
+# User-specific
+*.userprefs
+*.sln.iml
+
+# Configuration
+*.launchSettings.json
+appsettings.Development.json
+appsettings.Local.json
+
+# OS generated
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Tests
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.log
+*.trx
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Auto-generated EF files (model snapshots, etc.) — optional
+# Uncomment if you don't want EF snapshots in repo
+# **/Migrations/*Snapshot.cs
+
+# Local tools and environment
+.env
+*.sqlite
+*.mdf
+*.ldf
+*.dbmdl
+
+# IIS / ASP.NET
+.publish/
+_PublishTemp/
+project.lock.json
+
+# Node/Vite (if your solution has a Vue frontend)
+client/node_modules/
+client/dist/
+client/.env
+client/.vite/
+client/.cache/
+
+# Others
+*.swp
+*.bak
+*.orig
+*.rej
+*.manifest
