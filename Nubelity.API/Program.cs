@@ -1,6 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
+using Nubelity.API.Middlewares;
+using Nubelity.Application.Interfaces;
 using Nubelity.Infrastructure.Persistence;
+using Nubelity.Infrastructure.Persistence.Repositories;
 
 namespace Nubelity.API
 {
@@ -24,7 +27,19 @@ namespace Nubelity.API
             );
 
 
+
+            //DI
+
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
+            builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
             var app = builder.Build();
+
+            
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -34,6 +49,8 @@ namespace Nubelity.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseErrorHandlingMiddleware();
 
             app.UseAuthorization();
 
