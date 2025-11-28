@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+
+  nubelity-postgres:
+    image: postgres:15
+    container_name: nubelity-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: Nubelity
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - nubelity-net
+
+  nubelity-api:
+    build:
+      context: .
+      dockerfile: Nubelity.API/Dockerfile
+    container_name: nubelity-api
+    depends_on:
+      - nubelity-postgres
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Production"
+      ConnectionStrings__DefaultConnection: "Host=nubelity-postgres;Port=5432;Database=Nubelity;Username=postgres;Password=postgres"
+    ports:
+      - "8080:8080"
+    networks:
+      - nubelity-net
+
+networks:
+  nubelity-net:
+
+volumes:
+  pgdata:

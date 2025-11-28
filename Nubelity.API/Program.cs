@@ -118,6 +118,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// just for docker
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.UseHttpsRedirection();
 
 app.UseErrorHandlingMiddleware();
