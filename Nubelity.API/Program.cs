@@ -88,12 +88,15 @@ builder.Services.AddScoped<INormalizationService, NormalizationService>();
 builder.Services.AddScoped<IIsbnSoapService, SoapIsbnService>();
 builder.Services.AddHttpClient<ICoverImageService, CoverImageService>();
 
+
 builder.Services.AddScoped<SBNServiceSoapTypeClient>(sp =>
 {
     var binding = new BasicHttpBinding();
     var endpoint = new EndpointAddress("http://webservices.daehosting.com/services/isbnservice.wso");
     return new SBNServiceSoapTypeClient(binding, endpoint);
 });
+
+
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 
