@@ -11,6 +11,16 @@ namespace Nubelity.Application.Exceptions
         {
             Errors = errors;
         }
+
+        public DomainValidationException(string error)
+            : this(new[] { error })
+        {
+        }
+
+        public DomainValidationException(params string[] errors)
+            : this((IEnumerable<string>)errors)
+        {
+        }
     }
 
 }

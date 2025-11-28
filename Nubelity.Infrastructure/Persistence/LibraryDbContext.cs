@@ -16,7 +16,6 @@ namespace Nubelity.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Registrar todas las configuraciones automáticamente
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(LibraryDbContext).Assembly);
 
             base.OnModelCreating(modelBuilder);
